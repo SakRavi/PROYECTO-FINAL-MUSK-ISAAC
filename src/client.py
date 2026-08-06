@@ -1,5 +1,3 @@
-# CLASS CLIENT
-
 class Client:
 
     def __init__(
@@ -22,7 +20,4 @@ class Client:
             "country": self.country,
             "signup_date": self.signup_date,
         }
-
-# PRE_TESTING
-
 

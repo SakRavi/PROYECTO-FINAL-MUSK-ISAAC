@@ -1,14 +1,12 @@
-# CLASS SALE
-
 class Sale:
     
-    def __init__ (
+    def __init__(
         self,
-        sale_id:int,
+        sale_id:str,
         client_id:int,
         product:str,
         category:str,
-        amount:int,
+        amount:float,
         date:str,
         ):
         
@@ -29,4 +27,3 @@ class Sale:
             "date": self.date,
         }
         
-# PRE TESTING
