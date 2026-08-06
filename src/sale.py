@@ -22,7 +22,7 @@ class Sale:
     def to_dict(self):
         return {
             "sale_id": self.sale_id,
-            "client_id": self.client.id,
+            "client_id": self.client_id,
             "product": self.product,
             "category": self.category,
             "amount": self.amount,
