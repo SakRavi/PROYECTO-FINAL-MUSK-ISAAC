@@ -3,7 +3,7 @@ class ClientCollection:
     def __init__(self, clients):
         self.clients = clients
         
-    def get_client_by_id(self, client_id: int):
+    def get_client_by_id(self, client_id):
         for client in self.clients:
             if client.client_id == client_id:
                 return client
@@ -11,12 +11,12 @@ class ClientCollection:
         return None
         
     def clients_by_country(self, country):
-        clients_found = []
+        country_clients = []
             
         for client in self.clients:
             if client.country == country:
-                clients_found.append(client)
+                country_clients.append(client)
                     
-            return clients_found
+        return country_clients
 
 
