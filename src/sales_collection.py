@@ -1,3 +1,12 @@
+"""
+Metodos obligatorios:
+            METODO                               FUNCION
+    - sales_by_client(client_id)        | todas las ventas de un cliente
+    - total_amount_by_client(client_id) | suma de importes de un cliente
+    - total_amount_by_category(category)| suma de ventas de una categoria
+    - average_sale_by_client(client_id) | media de gasto por venta para un cliente
+    
+"""
 class SalesCollection:
 
     def __init__(self, sales):
@@ -35,3 +44,5 @@ class SalesCollection:
         total_amount = self.total_amount_by_client(client_id)
         average_amount = total_amount / len(client_sales)
         return average_amount
+    
+

@@ -1,0 +1,122 @@
+# PRE TESTING
+"""
+    `sale.py`
+    ! JORGE = (pagina 6) sale_id: pdf indica INT, datos/sales.csv = usan STR
+    ! bash: python -m src.analyze
+    ! ValueError: invalid literal for int() with base 10: 'S1001'
+    
+    TERMINAL:
+    # test_type_format_sales()
+    
+    sale_id: S1001 <class 'str'>
+    client_id: 1 <class 'int'>
+    product: Smartphone <class 'str'>
+    category: Electronics <class 'str'>
+    amount: 699.99 <class 'float'>
+    date: 2023-07-01 <class 'str'>
+
+    `sales_collection.py`
+    ! JORGE = (pagina 7) pdf = salestCollection =(pero)= SalesCollection de pyTest**
+    ! Me da error de: (con bash: python -m pytest)
+    ! from src.sales_collection import SalesCollection `test_collections.py`
+    ERROR collecting tests/test_collections.py 
+    ===============================
+    ERROR tests/test_10_calculos.py
+    ERROR tests/test_calculations.py
+    ERROR tests/test_collections.py
+    !Interrupted: 3 errors during collection!
+    3 errors in 0.51s
+    
+    `analyze.py`
+    ! JORGE = (pagina 8/9) pdf = la especificacion del JSON de salida, no indica el calculo 8 , esta en report pero no en json.
+    ! 8 categoria especifica ->
+    ! LINE 64 / top_electronics_accessories_by_client()
+    ! LINE 114 / TEST: 
+    ==TEST_TOP_CLIENT_BY_CATEGORY==
+        Electronics: Alice
+        Accessories: Alice
+
+    ! JORGE = El PDF dice que actions valida el JSON generado y su ruta
+    ! 
+"""
+# !python -m pytest
+"""
+tests/test_10_calculos.py .[ 20%]
+tests/test_calculations.py .[ 40%]
+tests/test_clients.py .[ 60%]
+tests/test_collections.py .[ 80%]
+tests/test_sales.py .[100%]
+= 5 passed in 0.36s =
+"""
+# from src.analyze import (
+#     find_top_client_by_category,
+#     load_clients,
+#     load_sales,
+#     print_file_true_test,
+#     test_01,
+#     test_02,
+#     test_03,
+#     test_04,
+#     test_05,
+#     test_06,
+#     test_07,
+#     test_08,
+#     test_09,
+#     test_10,
+#     test_m_report,
+#     test_type_format_sales,
+# )
+
+
+# def top_electrincs_accessories_by_client():
+    
+#     list_clients = load_clients()
+#     list_sales = load_sales()
+    
+#     top_electronics_client = find_top_client_by_category(list_clients,list_sales,"Electronics",) # 8
+#     top_accessories_client = find_top_client_by_category(list_clients, list_sales, "Accessories",) # 8
+
+#     print("Electronics:", top_electronics_client)
+#     print("Accessories:", top_accessories_client)
+    
+# # !python -m manual_check
+# # Antes = python -m manual_check
+# # Ahora = como TXT para documentacion.
+# if __name__ == "__main__":
+
+#     print_file_true_test()
+#     print()
+    
+#     test_type_format_sales()
+#     print()
+#     # = = = = = = = = = = = = = 
+
+#     print("TEST FUNCIONES")
+#     print("==01==")
+#     test_01()
+#     print("==02==")
+#     test_02()
+#     print("==03==")
+#     test_03()
+#     print("==04==")
+#     test_04()
+#     print("==05==")
+#     test_05()
+#     print("==06==")
+#     test_06()
+#     print("==07==")
+#     test_07()
+#     print("==08==")
+#     test_08()
+#     print("==09==")
+#     test_09()
+#     print("==10==")
+#     test_10()
+#     print("==REPORT==")
+#     test_m_report()
+    
+#     print("==TEST_TOP_CLIENT_BY_CATEGORY==")
+#     top_electrincs_accessories_by_client()
+    
+    
+    

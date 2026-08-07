@@ -1,17 +1,21 @@
+"""
+ATRIBUTOS:
+    - client_id:(int)
+    - name:(str)
+    - country:(str)
+    - signup_date(str)
+METODO:
+    - to_dict()
+"""
+
 class Client:
 
-    def __init__(
-        self,
-        client_id: int,
-        name: str,
-        country: str,
-        signup_date: str,
-        ):
+    def __init__(self,client_id ,name, country, signup_date):
         
-        self.client_id = client_id
-        self.name = name
-        self.country = country
-        self.signup_date = signup_date
+        self.client_id = int(client_id)
+        self.name = str(name)
+        self.country = str(country)
+        self.signup_date = str(signup_date)
         
     def to_dict(self):
         return {
